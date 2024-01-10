@@ -1,0 +1,176 @@
+<html>
+<head>
+    <title>Cart- Store</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Vegetable-Store">
+        <meta name="keywords" content="HTML, CSS, javascript">
+        <meta name="author" content="Venkatadri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+                <a href="index.html"><img src="logo.png" width="100px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Vegetables&Fruits.html">Vegetables & Fruits</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> 
+    <!-- cart item details   -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Vegetables or Fruits</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/straberry.jpeg">
+                        <div>
+                            <p>Strawberryes</p>
+                            <small>Price: &#8377; 400.0</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1">kg</td>
+                <td>&#8377; 400 rupees</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/promongonent.jpeg">
+                        <div>
+                            <p>Pomegranete</p>
+                            <small>Price: &#8377; 170.0</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1">kg</td>
+                <td>&#8377; 170 rupees</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/carrot.jpg">
+                        <div>
+                            <p>Carrot</p>
+                            <small>Price: &#8377; 40.0</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1">kg</td>
+                <td>&#8377; 40 rupees</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/tomato.jpg">
+                        <div>
+                            <p>Tomato</p>
+                            <small>Price: &#8377; 30.0</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1">kg</td>
+                <td>&#8377; 30 rupees</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal :</td>
+                    <td>&#8377; 640.0 rupees</td>
+                </tr>
+                <tr>
+                    <td>Tax :</td>
+                    <td>&#8377; 20.0 rupees</td>
+                </tr>
+                <tr>
+                    <td>Total :</td>
+                    <td>&#8377; 660.0 rupees</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/app-store.png">
+                        <img src="images/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="logo.png"></a>
+                    <p>Our Purpose is to Sustainably make the pleasure
+                        and good Health For People.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join With Us</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                   <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>You Tube</li>
+                    <li>Twitter</li>
+                   </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright @ 2023 - Venky's Web<br>Created by VENKATADRI MAJJARI</p>
+        </div>
+    </div>
+<!-- Js for toggle menu -->
+    <script>
+        var MenuItems=document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight="200px"
+            }
+            else{
+                MenuItems.style.maxHeight="0px"
+            }
+        }
+    </script>
+</body>
+</html>
